@@ -19,7 +19,7 @@ export default function DetailsScreen({ navigation }) {
       <View style={globalStyles.heading}>
         <Text style={{ fontSize: 30, fontWeight: "bold" }}>Top Picks</Text>
       </View>
-      <ScrollView horizontal={true}>
+      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
         <View
           style={{
             flex: 1,
@@ -90,7 +90,7 @@ export default function DetailsScreen({ navigation }) {
         </View>
       </ScrollView>
 
-      <ScrollView horizontal={true}>
+      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
         <View
           style={{
             flex: 3,
