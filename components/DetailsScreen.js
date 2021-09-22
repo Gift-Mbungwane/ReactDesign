@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { View, Text, ImageBackground } from "react-native";
 import { globalStyles } from "../assets/styles/global";
 import { ScrollView, TouchableOpacity } from "react-native-gesture-handler";
-import { AntDesign } from "@expo/vector-icons";
+import { AntDesign, Feather, EvilIcons, Ionicons } from "@expo/vector-icons";
 
 const img = require("../assets/aloevera.png");
 const img2 = require("../assets/smallplant.png");
@@ -111,15 +111,50 @@ export default function DetailsScreen({ navigation }) {
               width: 200,
             }}
           >
+            <ImageBackground style={globalStyles.image} source={img} />
             <View style={{ position: "absolute", padding: 12 }}>
-              <Text style={{ color: "white", fontSize: 12 }}>OUTDOOR</Text>
+              <Text style={{ color: "white", fontSize: 12 }}>Outdoor</Text>
               <Text
                 style={{ fontWeight: "bold", fontSize: 18, color: "white" }}
               >
                 Aloe Vera
               </Text>
+              <View
+                style={{
+                  marginTop: 95,
+                  justifyContent: "space-between",
+                  alignContent: "space-between",
+                  flexDirection: "row",
+                }}
+              >
+                <Ionicons
+                  name="sunny"
+                  size={24}
+                  color="black"
+                  style={{
+                    borderWidth: 0.5,
+                    width: 30,
+                    height: 30,
+                  }}
+                />
+                <Feather
+                  name="droplet"
+                  size={24}
+                  color="black"
+                  style={{
+                    borderWidth: 0.5,
+                    width: 30,
+                    height: 30,
+                    marginHorizontal: 10,
+                    justifyContent: "center",
+                    alignContent: "center",
+                    alignItems: "center",
+                    alignSelf: "center",
+                  }}
+                />
+                <EvilIcons name="question" size={40} color="black" />
+              </View>
             </View>
-            <ImageBackground style={globalStyles.image} source={img} />
             <View
               style={{
                 position: "absolute",
@@ -134,6 +169,7 @@ export default function DetailsScreen({ navigation }) {
                 $25
               </Text>
             </View>
+            <View style={{ borderRadius: 5 }}></View>
             <View
               style={{
                 padding: 24,
@@ -180,6 +216,55 @@ export default function DetailsScreen({ navigation }) {
             }}
           >
             <ImageBackground style={globalStyles.image} source={img2} />
+            <View
+              style={{
+                position: "absolute",
+                padding: 12,
+              }}
+            >
+              <Text style={{ color: "white", fontSize: 12 }}>Indoor</Text>
+              <Text
+                style={{ fontWeight: "bold", fontSize: 18, color: "white" }}
+              >
+                Monstera Deliciosa
+              </Text>
+
+              <View
+                style={{
+                  marginTop: 80,
+                  justifyContent: "space-between",
+                  alignContent: "space-between",
+                  flexDirection: "row",
+                }}
+              >
+                <Ionicons
+                  name="sunny"
+                  size={24}
+                  color="black"
+                  style={{
+                    borderWidth: 0.5,
+                    width: 30,
+                    height: 30,
+                  }}
+                />
+                <Feather
+                  name="droplet"
+                  size={24}
+                  color="black"
+                  style={{
+                    borderWidth: 0.5,
+                    width: 30,
+                    height: 30,
+                    marginHorizontal: 10,
+                    justifyContent: "center",
+                    alignContent: "center",
+                    alignItems: "center",
+                    alignSelf: "center",
+                  }}
+                />
+                <EvilIcons name="question" size={40} color="black" />
+              </View>
+            </View>
           </View>
           <View
             style={{
